@@ -9,8 +9,8 @@ define('DOMAIN',$_SERVER['HTTP_HOST']);
 
 define('PROTOCOL',$_SERVER['REQUEST_SCHEME'].'://');
 
-define('DEFAULT_CONTROLLER','underconstruction');
-define('US_VERSION','V.1.016');
+define('DEFAULT_CONTROLLER','yapimasamasinda');
+define('US_VERSION','20210703');
 
 ini_set('display_errors', 0);
 ini_set('display_startup_errors', 0);

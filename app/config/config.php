@@ -13,7 +13,7 @@ class config  extends \umutsurmeli\system\library\config {
     public $systemsmtppass = '';
 
     public $guvenliIP = array(
-      //'85.112.110.139'=>'umut.ev'  
+       
     );
     
     public $database = array(

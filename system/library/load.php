@@ -39,7 +39,21 @@ class load {
         
         return $classfullpath;
     }
-
+    public function systemmodel($classShortPath,$createNew=true) {
+        if(!class_exists('umutsurmeli\system\model\usmodel')) {
+            require_once(SYSTEMPATH.'model/QueryBuilder.php');
+            require_once(SYSTEMPATH.'model/usmodel.php');
+            $initus = \umutsurmeli\system\model\usmodel::baglan();
+        }
+        
+        $classfullpath = $this->systemclassloader($classShortPath, __FUNCTION__);
+        
+        if($createNew) {
+            return new $classfullpath();
+        }
+        
+        return $classfullpath;
+    }
     public function view($yol,$degiskenler=array(),$degerdondur=true) {
         if(file_exists(VIEWPATH.$yol.'.php')) {
             if(!empty($degiskenler)&&is_array($degiskenler)) {
