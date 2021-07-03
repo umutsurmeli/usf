@@ -5,7 +5,7 @@ class config  extends \umutsurmeli\system\library\config {
     ###########################################
     #         ayarlar burada tanımlanır       #
 
-    public $domain = 'umutsurmeli.com';
+    public $domain = 'usf.umutsurmeli.com';
     public $description = 'umutsurmeli framework deneme.';
     public $smtphost = '';
     public $smtpport = 0;
@@ -13,7 +13,7 @@ class config  extends \umutsurmeli\system\library\config {
     public $systemsmtppass = '';
 
     public $guvenliIP = array(
-      //'85.112.110.139'=>'umut.ev'  
+       
     );
     
     public $database = array(
@@ -30,7 +30,7 @@ class config  extends \umutsurmeli\system\library\config {
     public $config_autoload = array('bin');//'config2','config3_1\config3');
     
     // array('library'=>'run (bool) default'); // çok gerekmedikçe true kullanma
-    public $library_autoload = array('yonetim\libyonetim'=>false,'Temel'=>false);
+    public $library_autoload = array();
     
     // library/Temel
     public $protokolezorla = 'https';

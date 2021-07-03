@@ -58,3 +58,5 @@
 
 # v.1.013 taksim() eklendi. model/$this->where() iyileştirildi.
 
+# v.1.016 $this->session->flashdata ve $this->session->tempdata eklendi.
+

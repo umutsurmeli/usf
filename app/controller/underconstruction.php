@@ -17,8 +17,6 @@ public function index()
     $veri['header'] = view('standard/template1/1_header',$header);
     $veri['menu'] = view('underconstruction/2_menu');
     $veri['banner'] = view('underconstruction/3_banner');
-    //$veri['content'] = view('standard/template1/4_content');
-    //$veri['action'] = view('standard/template1/5_action');
     $footer['domain'] = config('domain');
     $veri['footer'] = view('standard/template1/6_footer',$footer);
     view('underconstruction/view_underconstruction', $veri, false);
@@ -27,9 +25,5 @@ public function index()
        
 
 }
-public function neyse()
-{
-    var_dump($this->rand);
-    $this->__routeToMethod(__FUNCTION__, 'yardim/viewtest', 'index');
-}
+
 }
